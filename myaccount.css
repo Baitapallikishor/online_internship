@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #CED4DA;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    height: 50px; 
+}
+.nav-links {
+    display: flex;
+    margin-right: 300px;
+    
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    background-color: #999;
+    border-radius: 5px;
+}
+.nav-right {
+    display: flex;
+    margin-left: 40%;
+
+    
+    
+}
+.nav-right a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav-right .contact-us {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 13px 15px;
+    margin-right: 10px;
+}
+
+.selection-container {
+    
+
+
+}
+
+
+.navbar1 {
+    
+    padding: 10px 0px 0px 0px ;
+    text-align: center;
+    align-items: center;
+    width: 40px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen on the right */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.3s ease;
+    z-index: 99;
+    margin-right: 0px;
+    
+    
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.menu-toggle:checked ~ .sidebar {
+    right: 0; /* Slide in to the right */
+}
+
+.close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+   margin-top: 10px;
+    left: 10px; /* Close button inside the sidebar */
+    cursor: pointer;
+}
+
+/* Adjusting the positioning of the phone number */
+.fa-phone {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+}
+
+
+
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0099ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+    border-color: #a1a4a5;
+    background-color: #ecf0f1;
+}
+
+.dropdown:focus {
+    outline: none;
+    box-shadow:white;
+}  
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-right {
+        display: none; /* Hide dropdown menu on small screens */
+    }
+}
+/*---------------*/
+
+.title{
+    color:rgb(157, 155, 155);
+    margin-top: 11%;
+    margin-left: 15%;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-left: 20%;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 10px;
+}
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111827;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Useful Links Section */
+.useful-links {
+    width: 30%;
+}
+
+.useful-links h2 {
+    color:white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.useful-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:15%;
+}
+
+.useful-links li {
+    margin: 10px 0;
+}
+
+.useful-links a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.useful-links a:hover {
+    color: #0056a3;
+}
+
+/* About Us Section */
+.about-us {
+    width: 30%;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #fdfafa;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #fffdfd;
+    line-height: 1.6;
+}
+
+/* Contact Us Section */
+.contact-us {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #fffdfd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    color: #faf5f5;
+    line-height: 1.6;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #0056a3;
+}
+
+.contact-us i {
+    font-size: 20px;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us i:hover {
+    color: #0056a3;
+}
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits button text color */
+    display: inline-block;
+  }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .useful-links, .about-us, .contact-us {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

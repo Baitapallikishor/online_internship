@@ -1,0 +1,410 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #CED4DA;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    height: 50px; 
+}
+.nav-links {
+    display: flex;
+    margin-right: 300px;
+    
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    background-color: #999;
+    border-radius: 5px;
+}
+.nav-right {
+    display: flex;
+    margin-left: 40%;
+
+    
+    
+}
+.nav-right a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav-right .contact-us {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 13px 15px;
+    margin-right: 10px;
+}
+
+.selection-container {
+    
+
+
+}
+
+
+.navbar1 {
+    
+    padding: 10px 0px 0px 0px ;
+    text-align: center;
+    align-items: center;
+    width: 40px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen on the right */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.3s ease;
+    z-index: 99;
+    margin-right: 0px;
+    
+    
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.menu-toggle:checked ~ .sidebar {
+    right: 0; /* Slide in to the right */
+}
+
+.close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+   margin-top: 10px;
+    left: 10px; /* Close button inside the sidebar */
+    cursor: pointer;
+}
+
+/* Adjusting the positioning of the phone number */
+.fa-phone {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+}
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0099ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+    border-color: #a1a4a5;
+    background-color: #ecf0f1;
+}
+
+.dropdown:focus {
+    outline: none;
+    box-shadow:white;
+}  
+
+.phone-number {
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-right {
+        display: none; /* Hide dropdown menu on small screens */
+    }
+}
+
+
+
+/*--------*/
+
+
+/* General Styles */
+
+
+/* Contact Form Container */
+.contact-container {
+    background: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Box shadow applied */
+    text-align: center;
+    margin-left: 20%;
+}
+
+/* Form Title */
+.contact-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Form Paragraph */
+.contact-container p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Box shadow for input fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+}
+
+/* Phone Number Input */
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input span {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+}
+
+.phone-input input {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Submit Button with Box Shadow */
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15); /* Button shadow */
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .contact-container {
+        width: 90%;
+    }
+}
+
+/*-----------sec-2------*/
+
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111827;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Useful Links Section */
+.useful-links {
+    width: 30%;
+}
+
+.useful-links h2 {
+    color:white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.useful-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:15%;
+}
+
+.useful-links li {
+    margin: 10px 0;
+}
+
+.useful-links a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.useful-links a:hover {
+    color: #0056a3;
+}
+
+/* About Us Section */
+.about-us {
+    width: 30%;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #fdfafa;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #fffdfd;
+    line-height: 1.6;
+}
+
+/* Contact Us Section */
+.contact-us {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #fffdfd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    color: #faf5f5;
+    line-height: 1.6;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #0056a3;
+}
+
+.contact-us i {
+    font-size: 20px;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us i:hover {
+    color: #0056a3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .useful-links, .about-us, .contact-us {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+

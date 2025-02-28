@@ -1,0 +1,534 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #CED4DA;;
+    color: white;
+}
+.logo img {
+    height: 50px;
+}
+.sidenet {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sidenet i {
+    font-size: 16px;
+}
+.nav-right a {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.nav-right a:hover {
+    background-color: #e65c00;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        
+    }
+    .sidenet {
+       
+    
+    }
+    .logo img {
+        height: 40px;
+    }
+}
+
+/*--------*/
+.background {
+    background-image: url('https://techedsolotions.odoo.com/web/image/1482-a022d663/Lovepik_com-401958674-blue-tech-background.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 65px;
+    
+}
+
+
+.mission-section {
+text-align: center; /* Center the text */
+
+padding: 40px 20px;
+border-radius: 8px; /* Optional: For rounded corners */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  
+
+}
+
+.mission-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.mission-section p {
+    font-size: 1.2em;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.mission-section h3 {
+    font-size: 1.9em;
+    font-weight:900;
+    color:white; /* Tech brand color */
+}
+
+.courses-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.courses-btn {
+    display: inline-block; 
+    background-color: #f159cd;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 30px; 
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.courses-btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px); 
+}
+
+
+/*-------*/
+
+.features {
+    text-align: center; /* Centers text */
+    
+    padding: 20px;
+}
+
+.features h1 {
+    display: inline-block; /* Ensures shadow fits the text */
+    font-size: 2.5em;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
+
+.features p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features h1 {
+        font-size: 2em;
+        padding: 8px 20px;
+    }
+
+    .features p {
+        font-size: 1em;
+    }
+}
+
+
+/*-----cards-----*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 30%; 
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: rotateX(-10deg); 
+}
+
+.card:nth-child(2) {
+    transform: rotateX(10deg); /* Rotate in opposite direction */
+}
+
+.card:nth-child(3) {
+    transform: rotateX(-10deg); /* Rotate back */
+}
+
+.card:hover {
+    transform: rotateX(0deg) scale(1.05); /* Reset rotation and slightly scale on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 410px; 
+    object-fit: cover;
+    border-bottom: 3px solid #f3f7fc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Makes cards stack in one column on small screens */
+    }
+}
+
+
+/*--------*/
+
+
+.findoutcourses {
+    text-align: center; /* Centers text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 50px auto; /* Centers the section */
+    padding: 20px;
+}
+
+.findoutcourses h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.findoutcourses p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 600px; /* Restricts width for better readability */
+}
+
+
+/*----courses----*/
+
+/* General Styling 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*/
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Rating */
+.card-rating {
+    font-size: 1.1em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.card-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+/*-------*/
+
+
+
+
+.education {
+    background-image: url('https://img.lovepik.com/background/20220426/medium/lovepik-digital-signal-technology-city-background-image_402159582.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    height: 400px; /* Set a height for the div */
+    width: 100%; /* Set the width to 100% or adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    color: white; /* Change text color if needed */
+}
+
+h1, p {
+    margin: 10px 0; /* Space between heading and paragraph */
+}
+
+.education button {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    background-color: #3498db; /* Change button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    /* Smooth transition for the rotation */
+   border-radius: 10px;
+
+}
+
+button:hover {
+    transform: rotate(360deg); /* Rotate back to normal on hover */
+}
+
+/*--------*/
+
+.policy {
+    text-align: left; /* Aligns text to the left */
+    margin: 50px;
+    padding: 20px;
+}
+
+.policy h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.policy button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.policy button:hover {
+    background-color: #0056b3;
+}
+
+
+/*--------------*/
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111827;;
+}
+
+/* Useful Links Section */
+.useful-links {
+    width: 30%;
+}
+
+.useful-links h2 {
+    color:white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.useful-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:15%;
+}
+
+.useful-links li {
+    margin: 10px 0;
+}
+
+.useful-links a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.useful-links a:hover {
+    color: #0056a3;
+}
+
+/* About Us Section */
+.about-us {
+    width: 30%;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #fdfafa;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #fffdfd;
+    line-height: 1.6;
+}
+
+/* Contact Us Section */
+.contact-us {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #fffdfd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    color: #faf5f5;
+    line-height: 1.6;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #0056a3;
+}
+
+.contact-us i {
+    font-size: 20px;
+    color: #0077b5;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us i:hover {
+    color: #0056a3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .useful-links, .about-us, .contact-us {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
